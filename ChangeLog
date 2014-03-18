@@ -1,0 +1,388 @@
+2013-04-18 Xavier Perseguers  <xavier@typo3.org>
+
+	* Remove use of deprecated method t3lib_div::view_array()
+	* Fixed bug: invalid skeleton code for Backend modules (content is shown twice)
+
+2012-07-19 Peter Foerger  <pfoerger@gmail.com>
+
+	* Set trunk to version 0.6.0-dev
+
+2012-07-19 Peter Foerger  <pfoerger@gmail.com>
+
+	* Release of EXT:kickstarter v0.5.3
+
+2011-08-04 Xavier Perseguers  <typo3@perseguers.ch>
+
+	* Fixed retrieval of common labels in kickstarter wizard when using TYPO3 4.6 (XLIFF)
+
+2011-07-24 Xavier Perseguers  <typo3@perseguers.ch>
+
+	* Fixed bug #10232: Reflect changes in main module names in TYPO3 4.2 (credits Francois Suter)
+
+2011-07-23 Xavier Perseguers  <typo3@perseguers.ch>
+
+	* Fixed bug #18218: Generated code should stick to TYPO3 CGL
+
+2011-07-18 Xavier Perseguers  <typo3@perseguers.ch>
+
+	* Removed calls to deprecated methods in TYPO3 4.6
+
+2011-06-01 Peter Foerger  <pfoerger@gmail.com>
+
+	* Set trunk to version 0.6.0-dev
+
+2011-06-01 Peter Foerger  <pfoerger@gmail.com>
+
+	* Release of EXT:kickstarter v0.5.1
+
+2011-06-01 Peter Foerger  <pfoerger@gmail.com>
+
+	* Fixed bug #18157: Created Backend module use removed function t3lib_div::fixed_lgd_pre() (credits Steffen Gebert)
+
+ 2011-06-01 Peter Foerger  <pfoerger@gmail.com>
+
+	* Fixed bug #13446: Kickstarter allows hyphen in extension key (credits Matze)
+
+2011-04-10 Xavier Perseguers  <typo3@perseguers.ch>
+
+	* Fixed bug #18088: Generated extensions are not compatible with workspaces
+
+2011-01-27 Peter Foerger  <pfoerger@gmail.com>
+
+	* Set trunk to version 0.6.0-dev
+
+2011-01-27 Peter Foerger  <pfoerger@gmail.com>
+
+	* Release of EXT:kickstarter v0.5.0
+
+2011-01-27 Peter Foerger  <pfoerger@gmail.com>
+
+	* Replaced mixed quotes with single quotes in function call.
+
+2011-01-26 Peter Foerger  <pfoerger@gmail.com>
+
+	* Fixed bug #16509: Convert all files to UTF-8
+
+2011-01-26 Peter Foerger  <pfoerger@gmail.com>
+
+	* Converted encoding to utf-8 and corrected Kaspers name
+
+2011-01-26 Peter Foerger  <pfoerger@gmail.com>
+
+	* Fixed bug #17332: Newline character after php closing tag in class.tx_kickstarter_reservedwords.php
+
+2011-01-26 Peter Foerger  <pfoerger@gmail.com>
+
+	* Fixed bug #16962: t3ver_stage should be int(11) in 4.5 (credits Tolleiv Nietsch)
+
+2010-12-22 Peter Foerger  <pfoerger@gmail.com>
+
+	* Fixed bug #13208: Add pages to subtypes_excludelist (credits Georg Ringer)
+
+2010-12-22 Peter Foerger  <pfoerger@gmail.com>
+
+	* Fixed bug #11645: Message text contains LINE BREAK (credits Stefano Kowalke)
+
+2010-12-22 Peter Foerger  <pfoerger@gmail.com>
+
+	* Fixed bug #11414 : After deletion of files kickstarter recreates them always (credits Daniel Hahler)
+
+2010-12-22 Peter Foerger  <pfoerger@gmail.com>
+
+	* Fixed bug #10917: ShowUid is not checked for numeric content
+
+2010-12-22 Steffen Kamper <info@sk-typo3.de>
+
+	* Fixed wrong module template path
+
+2010-07-29 Ingo Renner	<ingo3@typo3.org>
+
+	* Added "type" as reserved word
+
+2010-01-03 Ingo Renner	<ingo3@typo3.org>
+
+	* Fixed a whitespace issue
+
+2009-12-25 Ingo Renner	<ingo3@typo3.org>
+
+	* Fixed bug #12891: kickstarter crashes with 5.3 (credits Steffen Kamper)
+	* Added feature #12775: Use label tags in the language section (credits Georg Ringer)
+	* Fixed bug #12768: extension key field not using htmlspecialchars (credits Georg Ringer)
+
+2009-02-05 Steffen Kamper <info@sk-typo3.de>
+
+	* Fixed bug #10335: Feature: highlight php code in "View result"
+
+2009-02-03 Steffen Kamper <info@sk-typo3.de>
+
+	* Fixed bug #10332: MySQL keywords are not complete
+
+2009-01-23 Peter Foerger	<pfoerger@gmail.com>
+
+	* Fixed bug #10161: 'blob' is also a reserved name/word
+
+2009-01-12 Ingo Renner	<ingo3@typo3.org>
+
+	* set the version number to 0.5.0-dev
+
+2009-01-11 Ingo Renner	<ingo3@typo3.org>
+
+	* Release of EXT:kickstarter v0.4.0
+
+	* made use of mod.php for backend modules the only available method for backend modules
+	* removed translationsas they're provided from the translation server
+	* set the status to "stable"
+
+2008-12-22 Steffen Kamper <info@sk-typo3.de>
+
+	* feature #9990: Enable option to use BE-module with docheader
+	* feature #9988: Enable option to use BE-module with _DISPATCH
+
+2008-11-08 Francois Suter <francois@typo3.org>
+
+	* Corrected wrong reference to page id in example modfunc code
+
+2008-11-05 Ingo Renner	<ingo3@typo3.org>
+
+	* Updated contact email, year in copyright notices
+	* Fixed bug #9168: 'character' is also a reserved name/word
+	* Fixed bug #2357: "Max filesize allowed (kb)" cannot be changed
+	* Fixed bug #6479: wrong field names for localization
+	* Fixed bug #4974: Enlarge Description field to a textarea
+	* Fixed bug #9272: Remove clear.gif from BE module generation
+	* Fixed bug #9240: Value of default_sortby is TCA ctrl section is wrapped with double quotes
+
+2008-11-04 Peter Foerger	<p.foerger@vke-design.de>
+
+	* IRRE integration skipped. Option has been simply commented out, for ease of use to those who want to try out IRRE at it's basics…
+
+2008-05-28 Peter Foerger	<p.foerger@vke-design.de>
+
+	* FIX fixed bug 1045: Upper Value for field endtime is the 31.12.2020. Thanks to Steffen Mueller
+
+2008-05-28 Peter Foerger	<p.foerger@vke-design.de>
+
+	* FIX fixed bug 3334: RTE "Typical Basic Setup" should default to richtext[]. Thanks to Ernesto Baschny
+
+2008-05-27 Peter Foerger	<p.foerger@vke-design.de>
+
+	* FIX fixed bug 5339: t3lib_mgm::addServices should be placed in ext_localconf instead of ext_tables, Thanks to Nathan
+
+2008-05-27 Peter Foerger	<p.foerger@vke-design.de>
+
+	* FIX fixed bug 6386: Added 'default' and 'column' to the list of reserved words
+
+2008-05-27  Michael Stucki  <michael@typo3.org>
+
+	* Add missing parameter while calling ->cleanFieldsAndDoCommands(), bug 6053
+
+2008-05-27 Peter Foerger	<p.foerger@vke-design.de>
+
+	* FIX fixed bug 6482: Creating wizard leads to a breaking wizard
+
+2008-05-27 Peter Foerger	<p.foerger@vke-design.de>
+
+	* FIX fixed bug 5433: Removed the no_cache parameter for USER_INT
+
+2008-05-15 Peter Foerger	<p.foerger@vke-design.de>
+
+	* FIX fixed bug 8408: Default value of excludeField changed to zero, thanks to Steffen Kamper
+
+2008-05-13 Oliver Klee  <typo3-coding@oliverklee.de>
+
+	* CHG 0008377: Remove trailing whitespace from all kickstarter files
+
+2008-02-14 Dmitry Dulepov  <dmitry@typo3.org>
+
+	* Changed blob columns to text
+	* Commented CSS_editor code
+	* Changes in formatting according to CGL
+	* Added new "constraints" to EM_CONF
+
+2008-02-14 Dmitry Dulepov  <dmitry@typo3.org>
+
+	* Fixed missing parameter error when updating table properties
+
+2007-11-28 Ingmar Schlecht  <ingmar@typo3.org>
+
+	* Added hook "wizard_beforeSectionsHook" in class.tx_kickstarter_wizard.php
+
+2007-08-03 Ingo Renner	<typo3@ingo-renner.com>
+
+	* added initial version of IRRE support and vaious other smaller code clean ups from T3DD07, thanks to Peter and Olly!
+
+2007-07-18 Peter Foerger	<p.foerger@vke-design.de>
+
+	* FIX fixed bug 4991: table definition for TEXT and BLOB not compliant with MySQL 5.0 strict mode
+	* Thanks to Steffen Mueller for applying the initial patch
+
+2007-07-12 Peter Foerger	<p.foerger@vke-design.de>
+
+	* FIX fixed bug 5458: Kickstarter reports the wrong path after adding back-end functionality.
+
+2007-07-12 Peter Foerger	<p.foerger@vke-design.de>
+
+	* FIX fixed bug 5525: Reserved fieldnames @ extending a table
+
+2007-06-04 Ingo Renner	<typo3@ingo-renner.com>
+
+	* FIX fixed bug 5733: Code generated for localization contains simple quoting bug
+
+2007-03-15 Ingo Renner <typo3@ingo-renner.com>
+
+	* CHG changed some text in the language section
+
+2007-03-06 Ingo Renner <typo3@ingo-renner.com>
+
+	* Lots of thanks to Peter Foerger for the help with this update
+	* RMV 0002491: Remove commented-out code from the kickstarter, thanks to Oliver Klee
+	* ADD 0004539: Manage flex fields, thanks to Jean-Baptiste Rio
+	* UPD 0003723: ['feInterface'] section is depricated
+	* ADD 0004850: sidemenu()::singles should be configurable
+
+2007-02-22 Ingo Renner <typo3@ingo-renner.com>
+
+	* CHG more single quotes
+	* ADD added TODO file
+
+2007-01-30 Ingo Renner <typo3@ingo-renner.com>
+
+	* FIX path for TS files is now lowercased
+
+2007-01-24 Peter Foerger <p.foerger@vke-design.de>
+
+	* ADD new feature: initial release of the IRRE integration
+
+2006-12-19 Peter Foerger <p.foerger@vke-design.de>
+
+	* FIX fixed bug 0004563: kickstarter uses .php instead of .xml lang files
+
+2006-12-06 Ingo Renner <typo3@ingo-renner.com>
+
+	* Release of EXT:kickstarter v0.3.8
+
+2006-12-05 Ingo Renner <typo3@ingo-renner.com>
+
+	* thanks a lot to Peter Foerger for a lot of work contributed to these fixes
+
+	* FIX fixed bug 0004258: TS setup title allows spaces
+	* FIX fixed bug 0002176: Kickstarter should check for mysql reserved words.
+	* FIX fixed bug 0004601: Extending module Task Center fails
+
+2006-11-02 Ingo Renner <typo3@ingo-renner.com>
+
+	* FIX fixed a bug with generated BE module code, thanks to Manuel Montoya for the hint
+	* FIX fixed warnings concerning not set extension dependency presets
+	* FIX wrong author and author email was shown in the result overview
+	* ADD added an update button after the result overview
+	* CHG made the selector boxes which determine which files get written more intelligent
+	* CHG when extending an existing table, the drop down with the available tables now shows the labels inverted and sorted by table name
+	* RMV removed references to tt_news and tt_address in sections/class.tx_kickstarter_section_fields.php
+	* RMV removed several debug() calls to clean up the code
+
+2006-08-12 Ingo Renner <typo3@ingo-renner.com>
+
+	* CHG moved the languages section to be right below the general information section
+	* ADD made the local extension directory the default for the write location
+
+2006-07-21 Ingo Renner <typo3@ingo-renner.com>
+
+	* FIX fixed bug #156: Not all BE languages available in languages setup, thanks to Karsten for the useful hint!
+
+2006-07-20 Ingo Renner <typo3@ingo-renner.com>
+
+	* FIX fixed bugs #1815, #2943, #3273, #3545: Umlauts and special characters where not written correctly in locallang xml files
+
+2006-07-17 Ingo Renner <typo3@ingo-renner.com>
+
+	* FIX fixed bug #3816: The files wizard_form.dat and wizard_form.html is not saved
+	* FIX fixed bug #3715: Enable versioning: ext_tables.sql incompletely?
+	* ADD addded missing eval method "md5" for TCA generation (bug #3792), thanks to Jan-Hendrik
+	* FIX fixed bug #3743: created tca.php: add field "t3ver_label" if versioning enabled
+
+2006-07-02 Ingo Renner <typo3@ingo-renner.com>
+
+	* ADD new feature: kickstarter can now create TS files in the static folder of an extension
+	* FIX the previous mentioned feature also fixes bug #1158: The kickstarter doesn't create config files
+	* ADD feature request: doc/wizard_form.dat and doc/wizard_form.html are always overwritten now
+	* ADD feature request: 2247: Kickstarter should add @package/@subpackage PhpDoc tags
+
+2006-06-12 Ingo Renner <typo3@ingo-renner.com>
+
+	* FIX fixed bugs #455, #822, #977: Extension key was allowed to be longer than 30 chars and uppercase
+
+2006-06-01 Ingo Renner <typo3@ingo-renner.com>
+
+	* FIX fixed bug #3144: Kickstater don't WRITE anything and the icons are missing (typo3 4RC3) - many thanks to Michael Stucki for the patch!
+
+2006-05-05 Ingo Renner <typo3@ingo-renner.com>
+
+	* CHG changed require to require_once as requested in feature request #3395
+	* FIX fixed bug #3384: wrong Code in xxx_pi1_wizicon.php
+	* FIX fxed typo (bug #3377)
+	* CHG changed warning message before actually writing the extension (#1255)
+	* CHG changed year in copyright notices for all files
+
+2006-03-06  Kasper Skaarhoej
+
+	* Kickstarter now produces llXML files (locallang-XML) instead of locallang*.php files.
+
+2006-02-22  Kasper Skaarhoej
+
+	* Complies with new EM (function that writes extension to file system has changed in 4.0 EM)
+	* Fixed problem with path to images now that symlinks has been removed.
+
+2006-01-27  Ingmar Schlecht  <ingmar@typo3.org>
+
+	* Fixed bug #140: Selecting floating point input type doesn;t set the DB tables correctly
+
+2005-11-15  Ingo Renner  <typo3@ingo-renner.com>
+
+	* added recent translations from TER
+
+2005-11-12  Ingo Renner  <typo3@ingo-renner.com>
+
+	* Merged Version from TYPO3 v3.8.0 with CVS
+
+2005-09-15  Ingmar Schlecht  <ingmar@typo3.org>
+
+	* Fixed one more pair of quotes for SQL default values
+
+2005-05-13  Michael Stucki  <michael@typo3.org>
+
+	* Changed quotes for SQL default values
+
+2005-04-29  Kasper Skrhj  <kasper@typo3.com>
+
+	* Added "var $pi_checkCHash = TRUE;" in plugins when based on USER objects. See changelog of core for more explanation of this very important parameter for cached plugins.
+
+2005-04-11  Ingmar Schlecht  <ingmar@typo3.org>
+
+	* Kickstarter now automatically creates README.txt and ChangeLog files
+
+2005-04-10  Ingmar Schlecht  <ingmar@typo3.org>
+
+	* Made overwrite checkboxes finally work properly
+
+2005-04-06  Kasper Skrhj  <kasper@typo3.com>
+
+	* Removed all "unsigned" keywords from produced SQL (non-DBAL compliant)
+
+2004-11-23  Ingmar Schlecht  <ingmar@typo3.org>
+
+	* Finetuning new modularity of the Kickstarter.
+
+2004-11-18  Ingmar Schlecht  <ingmar@typo3.org>
+
+	* Making the Kickstarter modular.
+		- Outsourced all add_cat_*() and renderExtPart_*() functions into separate section classes.
+		- Created ext_localconf.php where all the sections are registered.
+
+2004-08-22  Ingmar Schlecht  <ingmar@typo3.org>
+
+	* Fine-tuning the way of interaction between EM and Kickstarter.
+		-> Added option "Edit in Kickstarter" to the upper right menu in the single extension view of the EM
+
+2004-08-20  Ingmar Schlecht  <ingmar@typo3.org>
+
+	* Initial import to CVS.
