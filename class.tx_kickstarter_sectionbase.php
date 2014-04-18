@@ -787,12 +787,7 @@ class tx_kickstarter_sectionbase {
 		$indexRequire = $this->sPS(
 			'
 							// DEFAULT initialization of a module [BEGIN]
-						unset($MCONF);
-						require_once(\'conf.php\');
-						require_once($BACK_PATH.\'init.php\');
-						require_once($BACK_PATH.\'template.php\');
 						$GLOBALS[\'LANG\']->includeLLFile(\'EXT:' . $extKey . '/' . $pathSuffix . 'locallang.xml\');
-			//require_once(PATH_t3lib . \'class.t3lib_scbase.php\');
 				// ....(But no access check here...)
 				// DEFAULT initialization of a module [END]
 		'
@@ -1101,7 +1096,10 @@ class tx_kickstarter_sectionbase {
 			)
 		);
 
-		$file .= "\n\n" . $require . "\n\n";
+		$file .= "\n";
+		if (!empty($require)) {
+			$file .= "\n" . $require . "\n\n";
+		}
 
 		$file .= trim(
 			$this->sPS(

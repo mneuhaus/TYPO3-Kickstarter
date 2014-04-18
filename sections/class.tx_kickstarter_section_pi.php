@@ -1363,7 +1363,6 @@ class tx_kickstarter_section_pi extends tx_kickstarter_sectionbase {
 				break;
 		}
 
-		$indexRequire = '// require_once(PATH_tslib . \'class.tslib_pibase.php\');';
 		$indexContent = $this->wrapBody(
 			'
 						class ' . $cN . ' extends tslib_pibase {
@@ -1382,10 +1381,7 @@ class tx_kickstarter_section_pi extends tx_kickstarter_sectionbase {
 				$extKey,
 				$pathSuffix . 'class.' . $cN . '.php',
 				$indexContent,
-				'Plugin \'' . $config['title'] . '\' for the \'' . $extKey . '\' extension.',
-				'',
-				'',
-				$indexRequire
+				'Plugin \'' . $config['title'] . '\' for the \'' . $extKey . '\' extension.'
 			)
 		);
 

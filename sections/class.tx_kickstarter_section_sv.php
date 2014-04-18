@@ -220,7 +220,6 @@ class tx_kickstarter_section_sv extends tx_kickstarter_sectionbase {
 					'
 		);
 
-		$indexRequire = 'require_once(PATH_t3lib.\'class.t3lib_svbase.php\');';
 		$indexContent = $this->wrapBody(
 			'class ' . $cN . ' extends t3lib_svbase {
 				var $prefixId = \'' . $cN . '\';		// Same as class name
@@ -237,10 +236,7 @@ class tx_kickstarter_section_sv extends tx_kickstarter_sectionbase {
 				$extKey,
 				$pathSuffix . 'class.' . $cN . '.php',
 				$indexContent,
-				'Service "' . $config['title'] . '" for the "' . $extKey . '" extension.',
-				'',
-				'',
-				$indexRequire
+				'Service "' . $config['title'] . '" for the "' . $extKey . '" extension.'
 			)
 		);
 	}

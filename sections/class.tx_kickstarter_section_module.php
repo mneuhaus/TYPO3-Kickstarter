@@ -251,8 +251,7 @@ class tx_kickstarter_section_module extends tx_kickstarter_sectionbase {
 		$indexRequire = $this->sPS(
 			'
 						$GLOBALS[\'LANG\']->includeLLFile(\'EXT:' . $extKey . '/' . $pathSuffix . 'locallang.xml\');
-			//require_once(PATH_t3lib . \'class.t3lib_scbase.php\');
-			$GLOBALS[\'BE_USER\']->modAccess($MCONF, 1);	// This checks permissions and exits if the users has no permission for entry.
+						$GLOBALS[\'BE_USER\']->modAccess($MCONF, 1);	// This checks permissions and exits if the users has no permission for entry.
 				// DEFAULT initialization of a module [END]
 		'
 		);
@@ -261,21 +260,6 @@ class tx_kickstarter_section_module extends tx_kickstarter_sectionbase {
 		$indexContent = $this->sPS(
 			'class ' . $cN . ' extends t3lib_SCbase {
 	protected $pageinfo;
-
-	/**
-	 * Initializes the module.
-	 *
-	 * @return void
-	 */
-	public function init() {
-		parent::init();
-
-		/*
-		if (t3lib_div::_GP(\'clear_all_cache\'))	{
-			$this->include_once[] = PATH_t3lib . \'class.t3lib_tcemain.php\';
-		}
-		*/
-	}
 
 	/**
 	 * Adds items to the ->MOD_MENU array. Used for the function menu selector.

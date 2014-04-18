@@ -17,11 +17,11 @@
  *  GNU General Public License for more details.
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
+
 /**
  * @author    Kasper Skårhøj <kasperYYYY@typo3.com>
  * @author    Ingo Renner <ingo@typo3.org>
  */
-
 class tx_kickstarter_section_modulefunction extends tx_kickstarter_sectionbase {
 	var $sectionID = 'modulefunction';
 
@@ -127,11 +127,6 @@ class tx_kickstarter_section_modulefunction extends tx_kickstarter_sectionbase {
 		$this->addLocalLangFile($ll, $pathSuffix . 'locallang.xml', 'Language labels for module "' . $mN . '"');
 
 		if ($position != 'user_task') {
-			$indexRequire = $this->sPS(
-				'
-								require_once(PATH_t3lib.\'class.t3lib_extobjbase.php\');
-							'
-			);
 			$indexContent = $this->sPS(
 				'class ' . $cN . ' extends t3lib_extobjbase {
 
@@ -173,7 +168,6 @@ class tx_kickstarter_section_modulefunction extends tx_kickstarter_sectionbase {
 				0
 			);
 		} else {
-			$indexRequire = '';
 			$indexContent = $this->sPS(
 				'class ' . $cN . ' extends mod_user_task {
 					/**
@@ -232,11 +226,7 @@ class tx_kickstarter_section_modulefunction extends tx_kickstarter_sectionbase {
 				$pathSuffix . 'class.' . $cN . '.php',
 				$indexContent,
 				'Module extension (addition to function menu) \'' . $config['title'] . '\' for the \'' . $extKey
-				. '\' extension.',
-				'',
-				'',
-				$indexRequire
-
+				. '\' extension.'
 			)
 		);
 
