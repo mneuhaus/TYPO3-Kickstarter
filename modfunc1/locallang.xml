@@ -4,17 +4,18 @@
 		<description></description>
 		<type>module</type>
 		<csh_table></csh_table>
-		<labelContext type="array">
-		</labelContext>
+		<labelContext type="array"></labelContext>
 	</meta>
 	<data type="array">
 		<languageKey index="default" type="array">
 			<label index="title">Create new Extension</label>
-			<label index="fields.excludeField"> Is Exclude-field </label>
+			<label index="fields.excludeField">Is Exclude-field</label>
 			<label index="fields.excludeField_description">If a field is marked "Exclude-field", users can edit it ONLY if the field is specifically listed in one of the backend user groups of the user.\nIn other words, if a field is marked "Exclude-field" you can control which users can edit it and which cannot.</label>
 			<label index="mlang_labels_tablabel">Create new extension, kickstarter</label>
 			<label index="mlang_labels_tabdescr">Create a new extension easily by the help of kickstarter</label>
 			<label index="mlang_tabs_tab">kickstarter</label>
+			<label index="moduleFunction.tx_kickstarter_modfunc1">Create new Extension</label>
+			<label index="moduleFunction.tx_kickstarter_modfunc2">Edit in Kickstarter</label>
 		</languageKey>
 	</data>
 </T3locallang>
