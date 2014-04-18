@@ -3,6 +3,7 @@
 $path = t3lib_extMgm::extPath('kickstarter');
 
 return array(
+	'tx_kickstarter_modfunc1' => $path . 'modfunc1/class.tx_kickstarter_modfunc1.php',
 	'tx_kickstarter_compilefiles' => $path . 'class.tx_kickstarter_compilefiles.php',
 	'tx_kickstarter_reservedwords' => $path . 'class.tx_kickstarter_reservedwords.php',
 	'tx_kickstarter_sectionbase' => $path . 'class.tx_kickstarter_sectionbase.php',
