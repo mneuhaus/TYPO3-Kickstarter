@@ -1,14 +1,17 @@
 <?php
+
 class SC_mod_tools_kickstarter_index {
 	/**
 	 * The backend document
-	 * @var	Object
+	 *
+	 * @var    Object
 	 */
 	var $doc;
+
 	/**
 	 * The main method of the Plugin
 	 *
-	 * @return	Mixed		Either returns an error or sends a redirect header
+	 * @return    Mixed        Either returns an error or sends a redirect header
 	 */
 	public function main() {
 		// Set the path to kickstarter
@@ -19,10 +22,13 @@ class SC_mod_tools_kickstarter_index {
 		return $modfunc1->main();
 	}
 }
+
 // Proceed if BE loaded
-if (!defined ("TYPO3_MODE"))    die ("Access denied.");
-if (TYPO3_MODE=="BE") {
-		// Apply access restrictions
+if (!defined("TYPO3_MODE")) {
+	die ("Access denied.");
+}
+if (TYPO3_MODE == "BE") {
+	// Apply access restrictions
 	$BE_USER->modAccess($MCONF, 1);
 	// Make instance:
 	$SOBE = t3lib_div::makeInstance('SC_mod_tools_kickstarter_index');
