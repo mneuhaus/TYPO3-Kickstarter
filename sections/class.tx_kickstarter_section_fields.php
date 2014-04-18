@@ -303,6 +303,7 @@ class tx_kickstarter_section_fields extends tx_kickstarter_sectionbase {
 	 */
 	function renderField($prefix, $fConf, $dontRemove = 0) {
 		global $LANG;
+		$extRelPath = t3lib_extMgm::extRelPath('kickstarter');
 
 		$version = class_exists('t3lib_utility_VersionNumber')
 			? t3lib_utility_VersionNumber::convertVersionNumberToInteger(TYPO3_version)
@@ -311,14 +312,14 @@ class tx_kickstarter_section_fields extends tx_kickstarter_sectionbase {
 		$onCP = $this->getOnChangeParts($prefix . '[fieldname]');
 		$fieldName = $this->renderStringBox($prefix . '[fieldname]', $fConf['fieldname']) .
 			(!$dontRemove ? ' (Remove:' . $this->renderCheckBox($prefix . '[_DELETE]', 0) . ')' .
-				'<input type="image" hspace="2" src="' . $this->wizard->siteBackPath . TYPO3_mainDir
-				. 'gfx/pil2up.gif" name="' . $this->varPrefix . '_CMD_' . $fConf["fieldname"] . '_UP" onclick="'
+				'<input type="image" hspace="2" src="' . $extRelPath
+				. 'icons/pil2up.gif" name="' . $this->varPrefix . '_CMD_' . $fConf["fieldname"] . '_UP" onclick="'
 				. $onCP[1] . '" />' .
-				'<input type="image" hspace="2" src="' . $this->wizard->siteBackPath . TYPO3_mainDir
-				. 'gfx/pil2down.gif" name="' . $this->varPrefix . '_CMD_' . $fConf["fieldname"] . '_DOWN" onclick="'
+				'<input type="image" hspace="2" src="' . $extRelPath
+				. 'icons/pil2down.gif" name="' . $this->varPrefix . '_CMD_' . $fConf["fieldname"] . '_DOWN" onclick="'
 				. $onCP[1] . '" />' .
-				'<input type="image" hspace="2" src="' . $this->wizard->siteBackPath . TYPO3_mainDir
-				. 'gfx/savesnapshot.gif" name="' . $this->varPrefix . '_CMD_' . $fConf["fieldname"] . '_SAVE" onclick="'
+				'<input type="image" hspace="2" src="' . $extRelPath
+				. 'icons/savesnapshot.gif" name="' . $this->varPrefix . '_CMD_' . $fConf["fieldname"] . '_SAVE" onclick="'
 				. $onCP[1] . '" title="Save this field setting as a preset." />' : '');
 
 		$fieldTitle =

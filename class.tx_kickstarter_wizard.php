@@ -303,6 +303,7 @@ class tx_kickstarter_wizard extends tx_kickstarter_compilefiles {
 		$actionType = $this->modData['wizSubCmd'] . ':' . $this->modData['wizAction'];
 		$singles = $this->getSingles();
 		$lines = array();
+		$extRelPath = t3lib_extMgm::extRelPath('kickstarter');
 		foreach ($this->options as $k => $v) {
 			// Add items:
 			$items = $this->wizArray[$k];
@@ -313,8 +314,8 @@ class tx_kickstarter_wizard extends tx_kickstarter_compilefiles {
 					$dummyTitle = t3lib_div::inList($singles, $k) ? '[Click to Edit]' : '<em>Item ' . $k2 . '</em>';
 					$isActive = !strcmp($k . ':edit:' . $k2, $actionType);
 					$delIcon = $this->linkStr(
-						'<img src="' . $this->siteBackPath . TYPO3_mainDir
-						. 'gfx/garbage.gif" width="11" height="12" border="0" title="Remove item" />', '',
+						'<img src="' . $extRelPath
+						. 'icons/garbage.gif" width="11" height="12" border="0" title="Remove item" />', '',
 						'deleteEl:' . $k . ':' . $k2
 					);
 					$iLines[] = '<tr' . ($isActive ? $this->bgCol(2, -30) : $this->bgCol(2)) . '><td>' . $this->fw(
@@ -329,8 +330,8 @@ class tx_kickstarter_wizard extends tx_kickstarter_compilefiles {
 			if (!t3lib_div::inList($singles, $k) || !count($iLines)) {
 				$c++;
 				$addIcon = $this->linkStr(
-					'<img src="' . $this->siteBackPath . TYPO3_mainDir
-					. 'gfx/add.gif" width="12" height="12" border="0" title="Add item" />', $k, 'edit:' . $c
+					'<img src="' . $extRelPath
+					. 'icons/add.gif" width="12" height="12" border="0" title="Add item" />', $k, 'edit:' . $c
 				);
 			} else {
 				$addIcon = '';
