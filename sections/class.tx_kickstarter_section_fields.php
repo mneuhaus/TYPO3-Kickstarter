@@ -19,9 +19,6 @@
  ***************************************************************/
 
 
-require_once(t3lib_extMgm::extPath('kickstarter') . 'class.tx_kickstarter_sectionbase.php');
-
-
 /**
  * @author    Kasper Skårhøj <kasperYYYY@typo3.com>
  * @author    Ingo Renner <ingo@typo3.org>

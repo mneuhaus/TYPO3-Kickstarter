@@ -22,8 +22,6 @@
  * @author    Ingo Renner <ingo@typo3.org>
  */
 
-require_once(t3lib_extMgm::extPath('kickstarter') . 'class.tx_kickstarter_sectionbase.php');
-
 class tx_kickstarter_section_module extends tx_kickstarter_sectionbase {
 	var $sectionID = 'module';
 
@@ -348,7 +346,7 @@ class tx_kickstarter_section_module extends tx_kickstarter_sectionbase {
 		$markers[\'CONTENT\'] = $this->content;
 
 			// Build the <body> for the module
-		$this->content = '';
+		$this->content = \'\';
 		$this->content .= $this->doc->startPage($GLOBALS[\'LANG\']->getLL(\'title\'));
 		$this->content .= $this->doc->moduleBody($this->pageinfo, $docHeaderButtons, $markers);
 		$this->content .= $this->doc->endPage();

@@ -18,9 +18,6 @@
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
-require_once(t3lib_extMgm::extPath('kickstarter') . 'class.tx_kickstarter_sectionbase.php');
-
-
 /**
  * @author    Kasper Skårhøj <kasperYYYY@typo3.com>
  * @author    Daniel Brün <dbruen@saltation.de>

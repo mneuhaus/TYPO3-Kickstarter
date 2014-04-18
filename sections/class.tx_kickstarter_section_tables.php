@@ -21,8 +21,6 @@
  * @author    Kasper Skårhøj <kasperYYYY@typo3.com>
  */
 
-require_once(t3lib_extMgm::extPath('kickstarter') . 'sections/class.tx_kickstarter_section_fields.php');
-
 class tx_kickstarter_section_tables extends tx_kickstarter_section_fields {
 	var $sectionID = 'tables';
 

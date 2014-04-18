@@ -15,17 +15,13 @@
  *  GNU General Public License for more details.
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
+
 /**
  * Module extension (addition to function menu) 'Make new extension' for the 'kickstarter' extension.
  *
  * @author    Daniel Bruen <dbruen@saltation.de>
  * @author    Ingmar Schlecht <ingmar@typo3.org>
  */
-
-
-// require_once(PATH_t3lib.'class.t3lib_extobjbase.php');
-require_once(t3lib_extMgm::extPath('kickstarter') . 'class.tx_kickstarter_wizard.php');
-
 class tx_kickstarter_modfunc1 extends t3lib_extobjbase {
 
 	/**

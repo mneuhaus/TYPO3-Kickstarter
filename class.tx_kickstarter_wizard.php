@@ -18,10 +18,6 @@
  *    This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
-$pathKickstarter = t3lib_extMgm::extPath('kickstarter');
-require_once($pathKickstarter . 'class.tx_kickstarter_compilefiles.php');
-require_once($pathKickstarter . 'class.tx_kickstarter_reservedwords.php');
-
 /**
  * TYPO3 Extension Kickstarter
  *

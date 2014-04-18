@@ -22,8 +22,6 @@
  * @author    Ingo Renner <ingo@typo3.org>
  */
 
-require_once(t3lib_extMgm::extPath('kickstarter') . 'class.tx_kickstarter_sectionbase.php');
-
 class tx_kickstarter_section_modulefunction extends tx_kickstarter_sectionbase {
 	var $sectionID = 'modulefunction';
 

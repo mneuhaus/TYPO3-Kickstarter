@@ -21,8 +21,6 @@
  * @author    Kasper Skårhøj <kasperYYYY@typo3.com>
  */
 
-require_once(t3lib_extMgm::extPath('kickstarter') . 'class.tx_kickstarter_sectionbase.php');
-
 class tx_kickstarter_section_languages extends tx_kickstarter_sectionbase {
 	var $sectionID = 'languages';
 
