@@ -14,6 +14,8 @@
 			<label index="mlang_labels_tablabel">Create new extension, kickstarter</label>
 			<label index="mlang_labels_tabdescr">Create a new extension easily by the help of kickstarter</label>
 			<label index="mlang_tabs_tab">kickstarter</label>
+			<label index="moduleFunction.tx_kickstarter_modfunc1">Create new Extension</label>
+			<label index="moduleFunction.tx_kickstarter_modfunc2">Edit in Kickstarter</label>
 		</languageKey>
 	</data>
 </T3locallang>
